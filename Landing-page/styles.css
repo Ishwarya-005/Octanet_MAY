@@ -12,7 +12,7 @@ html {
 section{
   display: flex;
   background-color: rgb(219, 237, 254);
-  min-height: 70vh;
+  min-height: 100vh;
   /* scroll-margin-top:60px; */
 }
 a{
@@ -109,7 +109,7 @@ i {
   width: 460px;
   border: none;
   border-radius: 30px;
-  box-shadow: 1px 1px 7px gray;
+  box-shadow: 1px 1px 5px gray;
 }
 .bar::placeholder{
   font-family: 'Poppins',Arial;
@@ -148,20 +148,52 @@ width:580px;
   justify-content: space-evenly;
   flex-direction: column;
   border-radius: 30px;
+  box-shadow: 1px 1px 5px gray;
 }
 #contact{
   display: flex;
   flex-direction: column;
 }
 .con-head{
-  font-size: 2.5em;
+  font-size: 3em;
   color: rgb(76,75,75);
-  margin-top:0px;
+  margin-top:80px;
 
 }
 .space-box{
   height: 100px;
   width: 100%;
+}
+#about{
+  display: flex;
+  flex-direction: column;
+}
+.about-head{
+  font-size: 3.5em;
+  color: rgb(76,75,75);
+  margin-top:100px;
+
+
+}
+.about-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:50px;
+}
+.about-img{
+  background-image: url('about-pic.svg');
+  width: 600px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.abt-text{
+  width: 500px;
 }
 
 
