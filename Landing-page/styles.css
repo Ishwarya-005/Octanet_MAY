@@ -162,6 +162,11 @@ width:580px;
   border-radius: 30px;
   box-shadow: 1px 1px 5px gray;
 }
+#home{
+  margin-top:150px;
+  scroll-margin-top: 100px;
+}
+
 #contact{
   display: flex;
   flex-direction: column;
