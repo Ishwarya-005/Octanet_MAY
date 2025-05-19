@@ -5,6 +5,8 @@ body{
   background-color: rgb(219, 237, 254);
   align-items: center;
   font-family: 'Poppins',Arial;
+  margin:0;
+  padding:0;
 }
 html {
   scroll-behavior: smooth;
@@ -24,6 +26,13 @@ a{
 }
 i {
   cursor: pointer;
+}
+hr{
+  background-color: rgb(104, 100, 235);
+  border: none;
+  height: 2.5px;
+  width: 215px;
+  margin-top: 0px;
 }
 .header{
   display: flex;
@@ -154,11 +163,17 @@ width:580px;
   display: flex;
   flex-direction: column;
 }
-.con-head{
+.con-head,.features-head{
   font-size: 3em;
   color: rgb(76,75,75);
   margin-top:80px;
+  height: 50px;
+  margin-bottom: 30px;
 
+}
+.features-head{
+  margin-top:70px;
+  margin-bottom:20px;
 }
 .space-box{
   height: 100px;
@@ -195,5 +210,60 @@ width:580px;
 .abt-text{
   width: 500px;
 }
-
+.f-img{
+  background-image: url('feature-img.svg');
+  width: 450px;
+  height: 423px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+.f-container{
+  display: flex;
+  justify-content: space-between;
+  max-width:100vw;
+  align-items: center;
+  width: 120%;
+  margin-left:0px;
+  padding:0;
+}
+#features{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-left:-180px;
+}
+.feature-box{
+  height: 500px;
+  width:600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap:30px;
+}
+.f1,.f2,.f3,.f4{
+  background-color: white;
+  height:  calc(50% - 15px);
+  width: calc(50% - 15px);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 5px 5px 5px;
+}
+.f-title{
+  font-family: 'Poppins',Arial;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(53, 53, 53);
+  margin: 20px 95px;
+}
+.lorem{
+  font-size: 14px;
+  width: 230px;
+}
 
