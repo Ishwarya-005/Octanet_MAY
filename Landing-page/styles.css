@@ -7,9 +7,12 @@ body{
   font-family: 'Poppins',Arial;
   margin:0;
   padding:0;
+  height: 100%;
+
 }
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 section{
   display: flex;
@@ -42,7 +45,7 @@ hr{
   width: 101%;
   margin-top: -10px;
   position: fixed;
-  z-index: 1000; 
+  z-index: 1500; 
 }
 .house{
   display: flex;
@@ -163,7 +166,7 @@ width:580px;
   display: flex;
   flex-direction: column;
 }
-.con-head,.features-head{
+.con-head,.features-head,.blog-title{
   font-size: 3em;
   color: rgb(76,75,75);
   margin-top:80px;
@@ -265,5 +268,69 @@ width:580px;
 .lorem{
   font-size: 14px;
   width: 230px;
+}
+#blog{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+.blog-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px gray;
+  width: 500px;
+  height: 70%;
+  border-radius: 30px;
+}
+.b1{
+  background-color: white;
+  box-shadow: 5px 5px rgb(104, 100, 235);
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.img-blog{
+  background-image: url('blog-img.svg');
+  width: 650px;
+  height: 562px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.blog-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog-title{
+  font-size: 2.5em;
+  margin-bottom: 0px;
+
+
+}
+.b{
+  width:500px;
+  height:1px;
+}
+.lorem-2{
+  width:80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 50px;
+}
+.cursor{
+  background-image: url('black-cursor.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width:100px;
+  height: 100px;
+  z-index: 1000;
+  margin-left:400px;
+  margin-bottom: 120px;
+
 }
 
