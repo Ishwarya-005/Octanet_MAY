@@ -116,29 +116,36 @@
     </section>
 
     <section id="contact">
+      
       <h1 class="con-head">Contact Us!</h1>
       <div class="white-box">
-        <div class="email-bar">
-          <p class="sides">*Email:</p>
-          <input type="email" placeholder="Enter your email" class="bar">
-        </div>
+        <form onsubmit="validForm()">
+
         <div class="name-bar">
-          <p class="sides">*Name:</p>
-          <input type="name" placeholder="Enter your name" class="bar">
+          <label for="name" class="sides">*Name:</label>
+          <input id="name" type="text" placeholder="Enter your name" class="bar" required autocomplete="name">
         </div>
+
+        <div class="email-bar">
+          <label for="email" class="sides">*Email:</label>
+          <input id="email" type="email" placeholder="Enter your email" class="bar" required autocomplete="email">
+        </div>
+
         <div class="phone-bar">
-          <p class="sides">Phone:</p>
-          <input  placeholder="Enter your number" class="bar">
+          <label for="phone" class="sides">*Phone:</label>
+          <input  id="phone" type ="tel" placeholder="Enter your number" class="bar" required autocomplete="tel">
         </div>
+        
         <div class="msg-bar">
-          <p class="sides">*Message:</p>
-          <input  placeholder="Type your message here" class="bar bar-msg">
+          <label for="message" class="sides">*Message:</label>
+          <textarea id="message" placeholder="Type your message here" class="bar bar-msg" rows="4" required autocomplete="off">    </textarea>
         </div>
+
       <button class="submit-btn" type="submit">Submit</button>
+      </form>
       </div>
       <div class="space-box"></div>
       
-    
     </section>
     <script src="script.js"></script>
   </body>
